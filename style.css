@@ -1,86 +1,72 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    
+body{
+    margin: 0;
 }
-
-#header {
-    background-color: #666666;
-    top: 0px;
-    width: 100%;
-    float: left;
-    padding-left: 15px;
-    text-align: center;
+.main{
+    display: block;
+    padding: 50px 30px 0 30px;
+}
+/* Style używane w sekcji nawigacji oraz nagłówka strony*/
+.header{
     position: fixed;
+    width: 100%;
+    z-index: 2000;
+    background-color: azure;
 }
 
-#headerLogo {
-    float: left;
-    height: 70px;
-    width: 70px;
-    padding: 8px;
+.navigation{
+    display: inline;
+    height: auto;
 }
 
-#topMenuList {
-    text-align: center;
-    width: 85%;
-    padding-top: 40px;
+.navigation__list{
+    display: inline;
 }
 
-.topMenuListElement {
+.navigation__list--item{
+    display: inline;
+    padding: 15px;
+}
+
+.navigation__list--link{
+    text-decoration: none;
+    color: #bd6e24b6;
+}
+.WTF{
+    font-size: 25px;
+    margin: 12px 12px 12px 24px;
+    width: auto;
     display: inline-block;
 }
 
-.topMenuListElementLink {
+/*Style używane w sekcji o mnie oraz artykułów początkowych*/
+.AboutMe{
+    display: inline;
+    height: auto;
+}
+.Articles{
+    display: inline;
+}
+.article{
+    display: inline;
+}
+.article__tittle{
+}
+
+.myProfile{
+    display: inline-block;
+    background-color: aqua;
+    margin: 40px;
+    max-width: 300px;
+}
+.myProfile__name{
+text-align: center;
+font-size: 16px;
+}
+.myProfile__photo{
+    max-width: 300px;
+    min-width: 10px;
+}
+.myProfile__description{
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: aliceblue;
-    text-decoration: none;
-}
-
-#content {
-    background-color: #e2e6ed;
-    height: 90%;
-    float: left;
-}
-
-#contentInside {
-    margin: 12px;
-    padding: 12px;
-}
-
-#footer {
-    background-color: #666666;
-    width: 100%;
-    bottom: 0px;
-}
-
-.footerText {
-    color: #e2e6ed;
-    text-align: center;
-    font-size: 12px;
-}
-
-.headlineH1 {
-    padding: 12px;
-    margin-right: 12px;
-    margin-left: 12px;
-    position: fixed;
-}
-
-.article {
-    padding: 8px;
-    float: left;
-    
-}
-
-.articleLogo {
-    float: left;
-    padding: 15px;
-    width: 5%;
-    height: 5%;
-}
-.articleHeadline{
-    padding: 10px;
+    overflow: visible;
 }
