@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+.main{
+    display: block;
+    padding: 50px 30px 0 30px;
+}
+/* Style używane w sekcji nawigacji oraz nagłówka strony*/
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    background-color: azure;
+}
+
+.navigation{
+    display: inline;
+    height: auto;
+}
+
+.navigation__list{
+    display: inline;
+}
+
+.navigation__list--item{
+    display: inline;
+    padding: 15px;
+}
+
+.navigation__list--link{
+    text-decoration: none;
+    color: #bd6e24b6;
+}
+.WTF{
+    font-size: 25px;
+    margin: 12px 12px 12px 24px;
+    width: auto;
+    display: inline-block;
+}
+
+/*Style używane w sekcji o mnie oraz artykułów początkowych*/
+.AboutMe{
+    display: inline;
+    height: auto;
+}
+.Articles{
+    display: inline;
+}
+.article{
+    display: inline;
+}
+.article__tittle{
+}
+
+.myProfile{
+    display: inline-block;
+    background-color: aqua;
+    margin: 40px;
+    max-width: 300px;
+}
+.myProfile__name{
+text-align: center;
+font-size: 16px;
+}
+.myProfile__photo{
+    max-width: 300px;
+    min-width: 10px;
+}
+.myProfile__description{
+    text-align: center;
+    overflow: visible;
+}

@@ -7,60 +7,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Strona domowa wesja 2</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
 </head>
 
 <body>
     <header class="header">
-                <p class="WTF">WTF?!</p>
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__list--item"><a href="#AboutMe" class="navigation__list--link">O mnie/Artykuły</a></li>
-                        <li class="navigation__list--item"><a href="#Coffe" class="navigation__list--link">Kawa</a></li>
-                        <li class="navigation__list--item"><a href="#Cooking" class="navigation__list--link">Gotowanie</a></li>
-                    </ul>
-                </nav>
+        <nav class="navigation">
+            <ul class="navigation--list">
+                <li class="navigation--item"><a href="#aboutMe" class="navigation--link">O mnie</a></li>
+                <li class="navigation--item"><a href="#interests" class="navigation--link">Zainteresowania</a></li>
+                <li class="navigation--item"><a href="#Contact" class="navigation--link">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="main">
-        <section id="AboutMe" >
-            <div class="AboutMe">
-                    <div class="myProfile">
-                            <p class="myProfile__name"> Maciej Pokrzywiński</p>
-                            <img class="myProfile__photo" src="Avatar.png"></img>
-                            <div class="myProfile__description">
-                                <p>bo Weronika krzyczy na mój polski... lubie dobrze zjeść, czasem też coś pogotować lub zaparzyć jakąś kawę</p>
-                            </div>
-                        </div>
-                        <div class="article">
-                                <h2 class="article_tittle">Trochę słów o mnie...</h2>
-                                <P>Tutaj będzie jakieś zdjęcie</P>
-                            </div>
-                            <div class="article">
-                                <h2 class="article_tittle">Początki bywają trudne</h2>
-                                <P>Tutaj będzie jakieś zdjęcie</P>
-                            </div>
-                            <div class="article">
-                                <h2 class="article_tittle">a gdyby tak to wszysto zostawic i wyjechac w bieszczady?</h2>
-                                <P>Tutaj będzie jakieś zdjęcie</P>
+        <section id="#aboutMe" class="aboutMe">
+            <div class="aboutMe__column aboutMe__column--person">
+                <div class="aboutMe_person">
+                    <img src="Graphic/Avatar.png" class="aboutMe__photo">
+                    <h3 class="aboutMe__name">Maciej Pokrzywiński</h3>
+                    <span class="aboutMe_position">Frontend developer wanna be</span>
+                </div>
             </div>
-            
-            
+            <div class="aboutMe__column">
+                <div id="aboutMe__interests" class="aboutMe__information">
+                    <h2 class="aboutMe__header">Zainteresowania</h2>
+                    <ul class="aboutMe__list">
+                        <li class="aboutMe__listItem"><a href="#cofee" class="aboutMe__link">Baristyka</a></li>
+                        <li class="aboutMe__listItem"><a href="#cooking" class="aboutMe__link">Gotowanie</a></li>
+                        <li class="aboutMe__listItem"><a href="#frontend" class="aboutMe__link">Tajniki Frontend'u</a></li>
+                        <li class="aboutMe__listItem"></li>
+                    </ul>
+                </div>
+                <div id="aboutMe__freeTime" class="aboutMe__information">
+                    <h2 class="aboutMe__header">Co robie w wolnym czasie?</h2>
+                    <ul class="aboutMe__list">
+                        <li class="aboutMe__listItem">Frontend'uje</li>
+                        <li class="aboutMe__listItem">Parzę kawę</li>
+                        <li class="aboutMe__listItem">Śpię</li>
+                        <li class="aboutMe__listItem">Pobieram Simsy Weronice</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <section class="Articles">
-            Sekcja artykułów/wpisów
-
 
         </section>
-        <section id="Coffe">
-            Sekcja o kawie
+        <section id="interests" class="interests">
+                <h2 class="interests__header">Zainteresowania</h2>
+                <div id="interestsDetails" class="interests__details">
+            <article id="cofee" class="interests__article"> 
+                <h3 class="interests__header">Kawa</h3>
+                <p>Coś o kawie</p>
+            </article>
+            <article id="cooking" class="interests__article">
+                <h3 class="interests__header">Gotowanie</h3>
+                <p>Coś o gotowaniu</p>
+            </article>
+            <article id="frontend" class="interests__article">
+                    <h3 class="interests__header">Tajniki frontend'u</h3>
+                    <p>Coś o frontendzie</p>
+                </article>
         </section>
-        <section id="Cooking">
-            Sekcja o gotowaniu
-        </section>
+        
+    </div>
     </main>
-    <footer class="main__footer">
-        Stopka
-    </footer>
 </body>
 
 </html>
